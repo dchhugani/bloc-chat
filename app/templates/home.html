@@ -1,2 +1,9 @@
 <h1>Home Page</h1>
 
+<ul>
+    <li ng-repeat="room in home.rooms">{{room.$value}}</li>
+</ul>
+
+<div ng-controller="ModalCtrl as modal">
+    <button ng-click="modal.open()">Add a room</button>
+</div>

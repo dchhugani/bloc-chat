@@ -12,9 +12,16 @@
                  controller: 'HomeCtrl as home',
                  templateUrl: '/templates/home.html'
              });
+         
+//         $stateProvider
+//             .state('room', {
+//                 url: '/',
+//                 controller: 'Room as room',
+//                 templateUrl: '/templates/room.html'
+//             });
      }
      
      angular
-         .module('projectName', ['ui.router', 'firebase'])
+         .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
          .config(config);
  })();
